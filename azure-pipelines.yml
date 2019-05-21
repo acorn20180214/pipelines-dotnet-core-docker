@@ -23,7 +23,7 @@ variables:
   ACR.Name: 'acornbabyregistry'
   
   # Update Web.Name value with a name that identifies your new Web app. Valid characters are a-z, 0-9, and -.
-  WebApp.Name: 'linux-acorn-hey3'
+  WebApp.Name: 'hey-acorn-linux'
   
   # Update ServicePlan.Name value with a name of the app service plan.
   ServicePlan.Name: 'acornnodelinuxasp'
@@ -46,13 +46,13 @@ jobs:
     vmImage: 'ubuntu-latest'
 
   steps:
+ # - script: docker login acornbabyregistry.azurecr.io -u 4ff9a112-53c8-4353-b3c3-6605eda1f2b5 -p 9bcce26c-514d-4574-a144-b2ceddcfdf7a
   - task: AzureRmWebAppDeployment@4
     displayName: 'Azure Web App on Container Deploy: $(WebApp.Name)'
     inputs:
       azureSubscription: 'acornarm'
       appType: webAppContainer
-      WebAppName: 'linux-acorn-hey3'
+      WebAppName: 'hey-acorn-linux'
       DockerNamespace: acornbabyregistry.azurecr.io
       DockerRepository: 'node-docker-demo'
       DockerImageTag: v3
-      AppSettings: -DOCKER_REGISTRY_SERVER_USERNAME 4ff9a112-53c8-4353-b3c3-6605eda1f2b5 -DOCKER_REGISTRY_SERVER_PASSWORD 9bcce26c-514d-4574-a144-b2ceddcfdf7a
