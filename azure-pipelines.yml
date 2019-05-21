@@ -23,7 +23,7 @@ variables:
   ACR.Name: 'acornbabyregistry'
   
   # Update Web.Name value with a name that identifies your new Web app. Valid characters are a-z, 0-9, and -.
-  WebApp.Name: 'acorn-linux-hey9'
+  WebApp.Name: 'linux-acorn-hey3'
   
   # Update ServicePlan.Name value with a name of the app service plan.
   ServicePlan.Name: 'acornnodelinuxasp'
@@ -52,7 +52,7 @@ jobs:
     inputs:
       azureSubscription: 'acornarm'
       appType: webAppContainer
-      WebAppName: 'acorn-linux-hey9'
+      WebAppName: 'linux-acorn-hey3'
       DockerNamespace: acornbabyregistry.azurecr.io
       DockerRepository: 'node-docker-demo'
       DockerImageTag: v3
