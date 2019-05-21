@@ -16,9 +16,6 @@ variables:
  # Update Azure.ResourceGroupName value with Azure resource group name.
   Azure.ResourceGroupName: 'abcppppp'
 
-  # Update Azure.ServiceConnectionId value with AzureRm service endpoint.
-  Azure.ServiceConnectionId: 'app_service_liang (ca772070-d065-4d9b-b688-369563d77992)'
-
   # Update Azure.Location value with Azure Location.
   Azure.Location: 'eastus'
 
