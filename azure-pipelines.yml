@@ -46,6 +46,7 @@ jobs:
     vmImage: 'ubuntu-latest'
 
   steps:
+  - script: docker login -u acornbabyregistry -p iJuVaM47wu1EdrCJJqfjDz9mucjQ=iJm acornbabyregistry.azurecr.io
   - task: AzureRmWebAppDeployment@4
     displayName: 'Azure Web App on Container Deploy: $(WebApp.Name)'
     inputs:
@@ -55,4 +56,4 @@ jobs:
       DockerNamespace: acornbabyregistry.azurecr.io
       DockerRepository: 'node-docker-demo'
       DockerImageTag: v3
-      AppSettings: -DOCKER_REGISTRY_SERVER_USERNAME acornbabyregistry -DOCKER_REGISTRY_SERVER_PASSWORD iJuVaM47wu1EdrCJJqfjDz9mucjQ=iJm
+     # AppSettings: -DOCKER_REGISTRY_SERVER_USERNAME acornbabyregistry -DOCKER_REGISTRY_SERVER_PASSWORD iJuVaM47wu1EdrCJJqfjDz9mucjQ=iJm
