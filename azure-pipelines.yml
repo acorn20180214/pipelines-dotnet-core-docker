@@ -56,7 +56,7 @@ jobs:
       DockerNamespace: acornbabyregistry.azurecr.io
       DockerRepository: 'node-docker-demo'
       DockerImageTag: v3
-      AppSettings: -DOCKER_REGISTRY_SERVER_USERNAME $(SPUserName) -DOCKER_REGISTRY_SERVER_PASSWORD $(SPPwd)
+      AppSettings: -DOCKER_REGISTRY_SERVER_USERNAME $(username) -DOCKER_REGISTRY_SERVER_PASSWORD $(password)
     env:
       SPUserName: $(username)
       SPPwd: $(password)
