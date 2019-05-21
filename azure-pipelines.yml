@@ -55,4 +55,4 @@ jobs:
       DockerNamespace: acornbabyregistry.azurecr.io
       DockerRepository: 'node-docker-demo'
       DockerImageTag: v3
-      ConfigurationSettings: -DOCKER_REGISTRY_SERVER_USERNAME acornbabyregistry -DOCKER_REGISTRY_SERVER_PASSWORD iJuVaM47wu1EdrCJJqfjDz9mucjQ=iJm
+      ConfigurationSettings: -DOCKER_REGISTRY_SERVER_USERNAME "acornbabyregistry" -DOCKER_REGISTRY_SERVER_PASSWORD "iJuVaM47wu1EdrCJJqfjDz9mucjQ=iJm"
