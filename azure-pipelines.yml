@@ -17,7 +17,7 @@ variables:
   Azure.ResourceGroupName: 'abcppppp'
 
   # Update Azure.ServiceConnectionId value with AzureRm service endpoint.
-  Azure.ServiceConnectionId: 'app_service_liang(ca772070-d065-4d9b-b688-369563d77992)'
+  Azure.ServiceConnectionId: 'app_service_liang (ca772070-d065-4d9b-b688-369563d77992)'
 
   # Update Azure.Location value with Azure Location.
   Azure.Location: 'eastus'
@@ -52,7 +52,7 @@ jobs:
   - task: AzureRmWebAppDeployment@4
     displayName: 'Azure Web App on Container Deploy: $(WebApp.Name)'
     inputs:
-      azureSubscription: '$(Azure.ServiceConnectionId)'
+      azureSubscription: 'app_service_liang (ca772070-d065-4d9b-b688-369563d77992)'
       appType: webAppContainer
       WebAppName: 'acorn-linux-hey5'
       DockerNamespace: acornbabyregistry.azurecr.io
