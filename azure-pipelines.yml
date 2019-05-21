@@ -49,7 +49,7 @@ jobs:
   - script: docker login acornbabyregistry.azurecr.io -u 4ff9a112-53c8-4353-b3c3-6605eda1f2b5 -p 9bcce26c-514d-4574-a144-b2ceddcfdf7a
   - task: AzureRmWebAppDeployment@4
     displayName: 'Azure Web App on Container Deploy: $(WebApp.Name)'
-    condition: succeed()
+    condition: succeeded()
     inputs:
       azureSubscription: 'acornarm'
       appType: webAppContainer
